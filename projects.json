@@ -1,0 +1,365 @@
+[
+  {
+    "id": 1,
+    "title": "Latest Project Project 2",
+    "category": "mixed",
+    "thumbnail": "assets/img/latest/pexels-maxfrancis-2246476.jpg",
+    "filename": "assets/img/latest/pexels-maxfrancis-2246476.jpg",
+    "isSelected": true,
+    "software": [
+      "Latest Project"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Latest Project Project 3",
+    "category": "mixed",
+    "thumbnail": "assets/img/latest/pexels-steve-1266808.jpg",
+    "filename": "assets/img/latest/pexels-steve-1266808.jpg",
+    "isSelected": true,
+    "software": [
+      "Latest Project"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Photoshop Project 4",
+    "category": "photoshop",
+    "thumbnail": "assets/img/photoshop/pexels-aakash-gupta-1333226-2567011.jpg",
+    "filename": "assets/img/photoshop/pexels-aakash-gupta-1333226-2567011.jpg",
+    "isSelected": false,
+    "software": [
+      "Photoshop"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Photoshop Project 5",
+    "category": "photoshop",
+    "thumbnail": "assets/img/photoshop/pexels-fotios-photos-1266302.jpg",
+    "filename": "assets/img/photoshop/pexels-fotios-photos-1266302.jpg",
+    "isSelected": false,
+    "software": [
+      "Photoshop"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Photoshop Project 6",
+    "category": "photoshop",
+    "thumbnail": "assets/img/photoshop/pexels-icon0-1214259.jpg",
+    "filename": "assets/img/photoshop/pexels-icon0-1214259.jpg",
+    "isSelected": false,
+    "software": [
+      "Photoshop"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Photoshop Project 7",
+    "category": "photoshop",
+    "thumbnail": "assets/img/photoshop/pexels-iriser-1122639.jpg",
+    "filename": "assets/img/photoshop/pexels-iriser-1122639.jpg",
+    "isSelected": false,
+    "software": [
+      "Photoshop"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Photoshop Project 8",
+    "category": "photoshop",
+    "thumbnail": "assets/img/photoshop/pexels-maxfrancis-2246476.jpg",
+    "filename": "assets/img/photoshop/pexels-maxfrancis-2246476.jpg",
+    "isSelected": false,
+    "software": [
+      "Photoshop"
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Photoshop Project 9",
+    "category": "photoshop",
+    "thumbnail": "assets/img/photoshop/pexels-pixabay-65894.jpg",
+    "filename": "assets/img/photoshop/pexels-pixabay-65894.jpg",
+    "isSelected": false,
+    "software": [
+      "Photoshop"
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Photoshop Project 10",
+    "category": "photoshop",
+    "thumbnail": "assets/img/photoshop/pexels-siri-202700-698921.jpg",
+    "filename": "assets/img/photoshop/pexels-siri-202700-698921.jpg",
+    "isSelected": false,
+    "software": [
+      "Photoshop"
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Photoshop Project 11",
+    "category": "photoshop",
+    "thumbnail": "assets/img/photoshop/pexels-tgh2018-1269674.jpg",
+    "filename": "assets/img/photoshop/pexels-tgh2018-1269674.jpg",
+    "isSelected": false,
+    "software": [
+      "Photoshop"
+    ]
+  },
+  {
+    "id": 11,
+    "title": "Photoshop Project 12",
+    "category": "photoshop",
+    "thumbnail": "assets/img/photoshop/project1.png",
+    "filename": "assets/img/photoshop/project1.png",
+    "isSelected": false,
+    "software": [
+      "Photoshop"
+    ]
+  },
+  {
+    "id": 12,
+    "title": "Photoshop Project 13",
+    "category": "photoshop",
+    "thumbnail": "assets/img/photoshop/project1_thumb.webp",
+    "filename": "assets/img/photoshop/project1_thumb.webp",
+    "isSelected": false,
+    "software": [
+      "Photoshop"
+    ]
+  },
+  {
+    "id": 13,
+    "title": "CorelDraw Project 14",
+    "category": "coreldraw",
+    "thumbnail": "assets/img/coreldraw/pexels-eberhardgross-443446.jpg",
+    "filename": "assets/img/coreldraw/pexels-eberhardgross-443446.jpg",
+    "isSelected": false,
+    "software": [
+      "CorelDraw"
+    ]
+  },
+  {
+    "id": 14,
+    "title": "CorelDraw Project 15",
+    "category": "coreldraw",
+    "thumbnail": "assets/img/coreldraw/pexels-katieburandt-1212693.jpg",
+    "filename": "assets/img/coreldraw/pexels-katieburandt-1212693.jpg",
+    "isSelected": false,
+    "software": [
+      "CorelDraw"
+    ]
+  },
+  {
+    "id": 15,
+    "title": "CorelDraw Project 16",
+    "category": "coreldraw",
+    "thumbnail": "assets/img/coreldraw/pexels-maxandrey-1366630.jpg",
+    "filename": "assets/img/coreldraw/pexels-maxandrey-1366630.jpg",
+    "isSelected": false,
+    "software": [
+      "CorelDraw"
+    ]
+  },
+  {
+    "id": 16,
+    "title": "CorelDraw Project 17",
+    "category": "coreldraw",
+    "thumbnail": "assets/img/coreldraw/pexels-pixabay-60597.jpg",
+    "filename": "assets/img/coreldraw/pexels-pixabay-60597.jpg",
+    "isSelected": false,
+    "software": [
+      "CorelDraw"
+    ]
+  },
+  {
+    "id": 17,
+    "title": "CorelDraw Project 18",
+    "category": "coreldraw",
+    "thumbnail": "assets/img/coreldraw/pexels-steve-1266808.jpg",
+    "filename": "assets/img/coreldraw/pexels-steve-1266808.jpg",
+    "isSelected": false,
+    "software": [
+      "CorelDraw"
+    ]
+  },
+  {
+    "id": 18,
+    "title": "After Effects Project 19",
+    "category": "aftereffects",
+    "thumbnail": "assets/img/aftereffects/pexels-dianne-60973-226424.jpg",
+    "filename": "assets/img/aftereffects/pexels-dianne-60973-226424.jpg",
+    "isSelected": false,
+    "software": [
+      "After Effects"
+    ]
+  },
+  {
+    "id": 19,
+    "title": "After Effects Project 20",
+    "category": "aftereffects",
+    "thumbnail": "assets/img/aftereffects/pexels-eberhardgross-1366919.jpg",
+    "filename": "assets/img/aftereffects/pexels-eberhardgross-1366919.jpg",
+    "isSelected": false,
+    "software": [
+      "After Effects"
+    ]
+  },
+  {
+    "id": 20,
+    "title": "After Effects Project 21",
+    "category": "aftereffects",
+    "thumbnail": "assets/img/aftereffects/pexels-eberhardgross-456710.jpg",
+    "filename": "assets/img/aftereffects/pexels-eberhardgross-456710.jpg",
+    "isSelected": false,
+    "software": [
+      "After Effects"
+    ]
+  },
+  {
+    "id": 21,
+    "title": "After Effects Project 22",
+    "category": "aftereffects",
+    "thumbnail": "assets/img/aftereffects/pexels-pixabay-33045.jpg",
+    "filename": "assets/img/aftereffects/pexels-pixabay-33045.jpg",
+    "isSelected": false,
+    "software": [
+      "After Effects"
+    ]
+  },
+  {
+    "id": 22,
+    "title": "After Effects Project 23",
+    "category": "aftereffects",
+    "thumbnail": "assets/img/aftereffects/pexels-pixabay-33101.jpg",
+    "filename": "assets/img/aftereffects/pexels-pixabay-33101.jpg",
+    "isSelected": false,
+    "software": [
+      "After Effects"
+    ]
+  },
+  {
+    "id": 23,
+    "title": "After Effects Project 24",
+    "category": "aftereffects",
+    "thumbnail": "assets/img/aftereffects/pexels-pixabay-45853.jpg",
+    "filename": "assets/img/aftereffects/pexels-pixabay-45853.jpg",
+    "isSelected": false,
+    "software": [
+      "After Effects"
+    ]
+  },
+  {
+    "id": 24,
+    "title": "After Effects Project 25",
+    "category": "aftereffects",
+    "thumbnail": "assets/img/aftereffects/pexels-pixabay-47334.jpg",
+    "filename": "assets/img/aftereffects/pexels-pixabay-47334.jpg",
+    "isSelected": false,
+    "software": [
+      "After Effects"
+    ]
+  },
+  {
+    "id": 25,
+    "title": "After Effects Project 26",
+    "category": "aftereffects",
+    "thumbnail": "assets/img/aftereffects/pexels-souvenirpixels-417074.jpg",
+    "filename": "assets/img/aftereffects/pexels-souvenirpixels-417074.jpg",
+    "isSelected": false,
+    "software": [
+      "After Effects"
+    ]
+  },
+  {
+    "id": 26,
+    "title": "Premiere Pro Project 27",
+    "category": "premierepro",
+    "thumbnail": "assets/img/premierpro/pexels-asadphoto-1024967.jpg",
+    "filename": "assets/img/premierpro/pexels-asadphoto-1024967.jpg",
+    "isSelected": false,
+    "software": [
+      "Premiere Pro"
+    ]
+  },
+  {
+    "id": 27,
+    "title": "Premiere Pro Project 28",
+    "category": "premierepro",
+    "thumbnail": "assets/img/premierpro/pexels-mccutcheon-1191710.jpg",
+    "filename": "assets/img/premierpro/pexels-mccutcheon-1191710.jpg",
+    "isSelected": false,
+    "software": [
+      "Premiere Pro"
+    ]
+  },
+  {
+    "id": 28,
+    "title": "Premiere Pro Project 29",
+    "category": "premierepro",
+    "thumbnail": "assets/img/premierpro/pexels-pixabay-33109.jpg",
+    "filename": "assets/img/premierpro/pexels-pixabay-33109.jpg",
+    "isSelected": false,
+    "software": [
+      "Premiere Pro"
+    ]
+  },
+  {
+    "id": 29,
+    "title": "Premiere Pro Project 30",
+    "category": "premierepro",
+    "thumbnail": "assets/img/premierpro/pexels-pixabay-36762.jpg",
+    "filename": "assets/img/premierpro/pexels-pixabay-36762.jpg",
+    "isSelected": false,
+    "software": [
+      "Premiere Pro"
+    ]
+  },
+  {
+    "id": 30,
+    "title": "Premiere Pro Project 31",
+    "category": "premierepro",
+    "thumbnail": "assets/img/premierpro/pexels-souvenirpixels-1519088.jpg",
+    "filename": "assets/img/premierpro/pexels-souvenirpixels-1519088.jpg",
+    "isSelected": false,
+    "software": [
+      "Premiere Pro"
+    ]
+  },
+  {
+    "id": 31,
+    "title": "Premiere Pro Project 32",
+    "category": "premierepro",
+    "thumbnail": "assets/img/premierpro/pexels-steve-1266808 (1).jpg",
+    "filename": "assets/img/premierpro/pexels-steve-1266808 (1).jpg",
+    "isSelected": false,
+    "software": [
+      "Premiere Pro"
+    ]
+  },
+  {
+    "id": 32,
+    "title": "Premiere Pro Project 33",
+    "category": "premierepro",
+    "thumbnail": "assets/img/premierpro/project2.png",
+    "filename": "assets/img/premierpro/project2.png",
+    "isSelected": false,
+    "software": [
+      "Premiere Pro"
+    ]
+  },
+  {
+    "id": 33,
+    "title": "Premiere Pro Project 34",
+    "category": "premierepro",
+    "thumbnail": "assets/img/premierpro/project2_thumb.webp",
+    "filename": "assets/img/premierpro/project2_thumb.webp",
+    "isSelected": false,
+    "software": [
+      "Premiere Pro"
+    ]
+  }
+]

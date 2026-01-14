@@ -1,0 +1,784 @@
+/* ===========================================
+   SHOWCASE GALLERY V2 - Industry Level Design
+   Inspired by: Awwwards, Behance, Dribbble
+   =========================================== */
+
+/* Hero Section - Dramatic */
+.showcase-hero {
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.showcase-hero::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at 30% 50%, rgba(255, 107, 107, 0.12) 0%, transparent 50%),
+        radial-gradient(circle at 70% 50%, rgba(78, 205, 196, 0.12) 0%, transparent 50%);
+    animation: hero-gradient-rotate 30s linear infinite;
+    z-index: -1;
+}
+
+@keyframes hero-gradient-rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.showcase-title {
+    font-size: clamp(3.5rem, 10vw, 7rem);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    line-height: 1;
+    animation: title-reveal 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    opacity: 0;
+    transform: translateY(60px);
+}
+
+@keyframes title-reveal {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.showcase-subtitle {
+    font-size: 1.2rem;
+    color: var(--text-body);
+    max-width: 500px;
+    animation: title-reveal 1.2s cubic-bezier(0.16, 1, 0.3, 1) 0.15s forwards;
+    opacity: 0;
+    transform: translateY(60px);
+}
+
+/* ===========================================
+   FILTER PILLS - Refined
+   =========================================== */
+
+.filter-pills {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1.5rem 1rem;
+    flex-wrap: wrap;
+    animation: title-reveal 1s cubic-bezier(0.16, 1, 0.3, 1) 0.25s forwards;
+    opacity: 0;
+}
+
+.filter-pill {
+    padding: 0.6rem 1.25rem;
+    border-radius: 99px;
+    border: 1.5px solid rgba(0, 0, 0, 0.1);
+    background: white;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.85rem;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    color: var(--text-body);
+    font-family: inherit;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.filter-pill:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.filter-pill.active {
+    background: var(--text-heading);
+    color: white;
+    border-color: transparent;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.filter-count {
+    background: rgba(0, 0, 0, 0.08);
+    padding: 0.1rem 0.4rem;
+    border-radius: 99px;
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+
+.filter-pill.active .filter-count {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* ===========================================
+   BENTO GRID - Industry Level Layout
+   =========================================== */
+
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1.25rem;
+    padding: 0 2rem 4rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+    .bento-grid {
+        grid-template-columns: repeat(6, 1fr);
+        gap: 1rem;
+        padding: 0 1.5rem 3rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .bento-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 0 1rem 2rem;
+    }
+}
+
+/* ===========================================
+   BENTO CARDS - 3D Transforms
+   =========================================== */
+
+.bento-card {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    background: #f5f5f5;
+    transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    opacity: 0;
+    transform: translateY(40px);
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.bento-card.revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.bento-card.hidden {
+    display: none !important;
+}
+
+/* Card Sizes - Bento Pattern */
+.bento-card.size-hero {
+    grid-column: span 8;
+    grid-row: span 2;
+    min-height: 500px;
+}
+
+.bento-card.size-large {
+    grid-column: span 6;
+    min-height: 380px;
+}
+
+.bento-card.size-medium {
+    grid-column: span 4;
+    min-height: 320px;
+}
+
+.bento-card.size-small {
+    grid-column: span 3;
+    min-height: 260px;
+}
+
+.bento-card.size-tall {
+    grid-column: span 4;
+    grid-row: span 2;
+    min-height: 500px;
+}
+
+@media (max-width: 1024px) {
+    .bento-card.size-hero {
+        grid-column: span 6;
+        min-height: 400px;
+    }
+
+    .bento-card.size-large {
+        grid-column: span 6;
+        min-height: 300px;
+    }
+
+    .bento-card.size-medium {
+        grid-column: span 3;
+        min-height: 260px;
+    }
+
+    .bento-card.size-small {
+        grid-column: span 3;
+        min-height: 200px;
+    }
+
+    .bento-card.size-tall {
+        grid-column: span 3;
+    }
+}
+
+@media (max-width: 640px) {
+
+    .bento-card.size-hero,
+    .bento-card.size-large,
+    .bento-card.size-medium,
+    .bento-card.size-small,
+    .bento-card.size-tall {
+        grid-column: span 1;
+        min-height: 280px;
+        grid-row: span 1;
+    }
+}
+
+/* 3D Hover Effect */
+.bento-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+    z-index: 10;
+}
+
+/* Inner card with 3D tilt */
+.bento-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 0.15s ease-out;
+}
+
+/* Media Container */
+.bento-media {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.bento-media img,
+.bento-media video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.bento-card:hover .bento-media img,
+.bento-card:hover .bento-media video {
+    transform: scale(1.06);
+}
+
+/* Loading shimmer */
+.bento-placeholder {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, #f5f5f5 0%, #ebebeb 50%, #f5f5f5 100%);
+    background-size: 400% 100%;
+    animation: shimmer 2s infinite linear;
+    z-index: 1;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: 200% 0;
+    }
+
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+/* Overlay with Info */
+.bento-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top,
+            rgba(0, 0, 0, 0.85) 0%,
+            rgba(0, 0, 0, 0.3) 40%,
+            transparent 70%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1.75rem;
+    z-index: 2;
+}
+
+.bento-card:hover .bento-overlay {
+    opacity: 1;
+}
+
+.bento-overlay h3 {
+    color: white;
+    font-size: 1.4rem;
+    margin-bottom: 0.3rem;
+    transform: translateY(15px);
+    opacity: 0;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1) 0.05s;
+}
+
+.bento-overlay p {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 0.9rem;
+    font-weight: 500;
+    transform: translateY(15px);
+    opacity: 0;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1) 0.1s;
+}
+
+.bento-card:hover .bento-overlay h3,
+.bento-card:hover .bento-overlay p {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Floating Badge */
+.bento-badge {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    padding: 0.4rem 0.9rem;
+    border-radius: 99px;
+    background: white;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 3;
+    transition: all 0.3s ease;
+}
+
+.bento-card:hover .bento-badge {
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.badge-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.badge-dot.ps {
+    background: #31A8FF;
+}
+
+.badge-dot.cd {
+    background: #009933;
+}
+
+.badge-dot.ae {
+    background: #9999FF;
+}
+
+.badge-dot.pr {
+    background: #EA77FF;
+}
+
+.badge-dot.featured {
+    background: linear-gradient(135deg, var(--primary), var(--orange));
+}
+
+/* Video Play Indicator */
+.bento-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70px;
+    height: 70px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    z-index: 3;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.bento-play::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 22px solid var(--text-heading);
+    border-top: 14px solid transparent;
+    border-bottom: 14px solid transparent;
+    margin-left: 5px;
+}
+
+.bento-card:hover .bento-play {
+    transform: translate(-50%, -50%) scale(1.1);
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.25);
+}
+
+/* ===========================================
+   HORIZONTAL SCROLL SECTION
+   =========================================== */
+
+.horizontal-section {
+    padding: 3rem 0;
+    overflow: hidden;
+}
+
+.horizontal-section h2 {
+    padding: 0 2rem 1.5rem;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.horizontal-scroll {
+    display: flex;
+    gap: 1.25rem;
+    padding: 0.5rem 2rem 2rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.horizontal-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.horizontal-card {
+    flex: 0 0 320px;
+    height: 420px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    scroll-snap-align: start;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    background: #f5f5f5;
+}
+
+.horizontal-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+}
+
+.horizontal-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.horizontal-card:hover img {
+    transform: scale(1.08);
+}
+
+/* ===========================================
+   THEATER MODE - Cinematic
+   =========================================== */
+
+.theater-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.96);
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.theater-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.theater-content {
+    position: relative;
+    max-width: 90vw;
+    max-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0.92) translateY(20px);
+    opacity: 0;
+    transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1) 0.1s;
+}
+
+.theater-overlay.active .theater-content {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+}
+
+.theater-media {
+    max-width: 100%;
+    max-height: 85vh;
+    border-radius: 12px;
+    box-shadow: 0 40px 100px rgba(0, 0, 0, 0.5);
+}
+
+.theater-close {
+    position: fixed;
+    top: 24px;
+    right: 24px;
+    width: 48px;
+    height: 48px;
+    background: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    z-index: 2001;
+}
+
+.theater-close::before,
+.theater-close::after {
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 2px;
+    background: var(--text-heading);
+    border-radius: 1px;
+}
+
+.theater-close::before {
+    transform: rotate(45deg);
+}
+
+.theater-close::after {
+    transform: rotate(-45deg);
+}
+
+.theater-close:hover {
+    transform: scale(1.1) rotate(90deg);
+}
+
+/* Navigation Arrows */
+.theater-nav {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 54px;
+    height: 54px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    z-index: 2001;
+}
+
+.theater-nav:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.theater-prev {
+    left: 24px;
+}
+
+.theater-next {
+    right: 24px;
+}
+
+.theater-nav::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+.theater-prev::after {
+    transform: rotate(135deg);
+    margin-left: 4px;
+}
+
+.theater-next::after {
+    transform: rotate(-45deg);
+    margin-right: 4px;
+}
+
+/* Info Panel */
+.theater-info {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2.5rem;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+    color: white;
+    text-align: center;
+    transform: translateY(100%);
+    transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1) 0.15s;
+}
+
+.theater-overlay.active .theater-info {
+    transform: translateY(0);
+}
+
+.theater-info h3 {
+    color: white;
+    font-size: 1.6rem;
+    margin-bottom: 0.4rem;
+}
+
+.theater-info p {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.95rem;
+}
+
+/* Counter */
+.theater-counter {
+    position: fixed;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.85rem;
+    font-weight: 600;
+    z-index: 2001;
+}
+
+/* ===========================================
+   RESPONSIVE
+   =========================================== */
+
+@media (max-width: 768px) {
+    .theater-nav {
+        width: 44px;
+        height: 44px;
+    }
+
+    .theater-prev {
+        left: 12px;
+    }
+
+    .theater-next {
+        right: 12px;
+    }
+
+    .theater-close {
+        top: 16px;
+        right: 16px;
+        width: 42px;
+        height: 42px;
+    }
+
+    .showcase-hero {
+        min-height: 35vh;
+    }
+
+    .horizontal-card {
+        flex: 0 0 280px;
+        height: 360px;
+    }
+}
+
+/* ===========================================
+   STAGGER ANIMATION
+   =========================================== */
+
+.bento-card:nth-child(1) {
+    transition-delay: 0s;
+}
+
+.bento-card:nth-child(2) {
+    transition-delay: 0.08s;
+}
+
+.bento-card:nth-child(3) {
+    transition-delay: 0.16s;
+}
+
+.bento-card:nth-child(4) {
+    transition-delay: 0.24s;
+}
+
+.bento-card:nth-child(5) {
+    transition-delay: 0.32s;
+}
+
+.bento-card:nth-child(6) {
+    transition-delay: 0.4s;
+}
+
+.bento-card:nth-child(7) {
+    transition-delay: 0.48s;
+}
+
+.bento-card:nth-child(8) {
+    transition-delay: 0.56s;
+}
+
+.bento-card:nth-child(n+9) {
+    transition-delay: 0.1s;
+}
+
+/* ===========================================
+   SCROLL PROGRESS
+   =========================================== */
+
+.scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    width: 0%;
+    z-index: 9999;
+    transition: width 0.1s ease-out;
+}
+
+/* ===========================================
+   FEATURED SECTION HEADER
+   =========================================== */
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem 1rem;
+    max-width: 1400px;
+    margin: 2rem auto 0;
+}
+
+.section-header h2 {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text-body);
+    font-weight: 600;
+}
+
+.section-header .count {
+    font-size: 0.85rem;
+    color: var(--text-light);
+}

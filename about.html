@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Apoorva Gupta</title>
+    <meta name="description"
+        content="Learn more about Apoorva Gupta, a Visual Designer skilled in AI graphics and viral content creation.">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Quicksand:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Three.js CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <style>
+        .about-hero {
+            padding: 6rem 0 3rem;
+            text-align: center;
+        }
+
+        .about-content-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 3rem;
+            align-items: start;
+            margin-bottom: 4rem;
+        }
+
+        @media (max-width: 900px) {
+            .about-content-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .profile-card {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: var(--border-radius);
+            padding: 3rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            box-shadow: var(--shadow-lg);
+            position: sticky;
+            top: 120px;
+        }
+
+        .profile-emoji {
+            font-size: 6rem;
+            margin-bottom: 1.5rem;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-15px);
+            }
+        }
+
+        .profile-card h2 {
+            color: white;
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .profile-card p {
+            opacity: 0.9;
+            font-size: 1rem;
+        }
+
+        .profile-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 0.5rem 1rem;
+            border-radius: 99px;
+            margin-top: 1.5rem;
+            font-weight: 600;
+            font-size: 0.9rem;
+            backdrop-filter: blur(10px);
+        }
+
+        .profile-badge-dot {
+            width: 8px;
+            height: 8px;
+            background: var(--accent);
+            border-radius: 50%;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        .about-text-section {
+            background: var(--surface);
+            border-radius: var(--border-radius);
+            padding: 2.5rem;
+            box-shadow: var(--shadow-md);
+        }
+
+        .about-text-section h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .about-text-section p {
+            font-size: 1.1rem;
+            color: var(--text-body);
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+
+        .skills-section {
+            margin-top: 2rem;
+        }
+
+        .skills-section h4 {
+            font-size: 1.1rem;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 1rem;
+        }
+
+        .skills-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+        }
+
+        .skill-badge {
+            padding: 0.6rem 1.2rem;
+            background: rgba(255, 107, 107, 0.1);
+            color: var(--primary);
+            border-radius: 99px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .skill-badge:hover {
+            background: var(--primary);
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        .skill-badge.ps {
+            border-left: 4px solid #31A8FF;
+        }
+
+        .skill-badge.cd {
+            border-left: 4px solid #009933;
+        }
+
+        .skill-badge.ae {
+            border-left: 4px solid #9999FF;
+        }
+
+        .skill-badge.pr {
+            border-left: 4px solid #EA77FF;
+        }
+
+        .skill-badge.ai {
+            border-left: 4px solid var(--orange);
+        }
+
+        /* Education & Experience */
+        .info-sections {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .info-card {
+            background: var(--surface);
+            border-radius: var(--border-radius);
+            padding: 2rem;
+            box-shadow: var(--shadow-sm);
+            transition: all 0.3s ease;
+        }
+
+        .info-card:hover {
+            box-shadow: var(--shadow-md);
+            transform: translateY(-5px);
+        }
+
+        .info-card-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--primary), var(--orange));
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .info-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-heading);
+        }
+
+        .timeline-item {
+            padding-left: 1.5rem;
+            border-left: 3px solid var(--primary);
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -7px;
+            top: 5px;
+            width: 12px;
+            height: 12px;
+            background: var(--primary);
+            border-radius: 50%;
+            border: 3px solid var(--surface);
+        }
+
+        .timeline-item h4 {
+            font-size: 1.1rem;
+            color: var(--text-heading);
+            margin-bottom: 0.25rem;
+        }
+
+        .timeline-item .date {
+            font-size: 0.9rem;
+            color: var(--primary);
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-item p {
+            color: var(--text-body);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .cta-section {
+            text-align: center;
+            padding: 4rem 2rem;
+            margin-top: 3rem;
+            background: linear-gradient(135deg, rgba(255, 107, 107, 0.1), rgba(78, 205, 196, 0.1));
+            border-radius: var(--border-radius);
+        }
+
+        .cta-section h2 {
+            margin-bottom: 1rem;
+        }
+
+        .cta-section p {
+            color: var(--text-body);
+            margin-bottom: 2rem;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Animated Background Blobs -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+
+    <div id="canvas-container"></div>
+
+    <div class="container">
+        <header>
+            <div class="logo">
+                <div class="logo-icon">A</div>
+                Apoorva
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Work</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="about-hero">
+                <div class="section-subtitle">About Me</div>
+                <h1>The <span class="gradient-text">Creative Mind</span> Behind the Art ✨</h1>
+            </div>
+
+            <div class="about-content-grid">
+                <!-- Profile Card -->
+                <div class="profile-card">
+                    <div class="profile-emoji">👩‍🎨</div>
+                    <h2>Apoorva Gupta</h2>
+                    <p>Visual Designer & Creative Technologist</p>
+                    <div class="profile-badge">
+                        <div class="profile-badge-dot"></div>
+                        Open to Opportunities
+                    </div>
+                </div>
+
+                <!-- About Text -->
+                <div class="about-text-section">
+                    <h3>Designing the Future with <span class="gradient-text">Art & Intelligence</span></h3>
+
+                    <p>
+                        I am <strong>Apoorva Gupta</strong>, a passionate Visual Designer with a keen eye for ethereal
+                        digital experiences. With a strong foundation in business administration and specialized
+                        training
+                        in Graphics Designing, I blend strategic thinking with artistic precision to create visuals that
+                        captivate and inspire.
+                    </p>
+
+                    <p>
+                        My approach to design is holistic—combining traditional graphic principles with modern
+                        technology. I specialize in leveraging <strong>Artificial Intelligence</strong> to generate
+                        viral content and cutting-edge graphics that tell compelling stories and leave lasting
+                        impressions.
+                    </p>
+
+                    <div class="skills-section">
+                        <h4>Technical Arsenal 🛠️</h4>
+                        <div class="skills-tags">
+                            <span class="skill-badge ps">Photoshop</span>
+                            <span class="skill-badge cd">CorelDraw</span>
+                            <span class="skill-badge pr">Premiere Pro</span>
+                            <span class="skill-badge ae">After Effects</span>
+                            <span class="skill-badge ai">Generative AI</span>
+                            <span class="skill-badge">Viral Content Strategy</span>
+                            <span class="skill-badge">Motion Graphics</span>
+                            <span class="skill-badge">Brand Identity</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education & Experience -->
+            <div class="info-sections">
+                <!-- Education -->
+                <div class="info-card">
+                    <div class="info-card-icon">🎓</div>
+                    <h3>Education</h3>
+
+                    <div class="timeline-item">
+                        <h4>Bachelor of Business Administration (BBA)</h4>
+                        <div class="date">2022 - 2025</div>
+                        <p>Lovely Professional University, Punjab — Building a strong foundation in business strategy,
+                            marketing, and management principles.</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <h4>Graphics Designing Certification</h4>
+                        <div class="date">Professional Training</div>
+                        <p>Caba Innovatives — Specialized training in professional graphic design tools, visual
+                            communication, and creative workflows.</p>
+                    </div>
+                </div>
+
+                <!-- Experience -->
+                <div class="info-card">
+                    <div class="info-card-icon">💼</div>
+                    <h3>Experience</h3>
+
+                    <div class="timeline-item">
+                        <h4>Visual Designer & Content Creator</h4>
+                        <div class="date">Freelance</div>
+                        <p>Creating stunning visual content for brands and individuals. Specializing in social media
+                            graphics, promotional materials, and viral content design.</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <h4>AI Graphics Specialist</h4>
+                        <div class="date">Creative Projects</div>
+                        <p>Leveraging cutting-edge AI tools to generate unique, eye-catching graphics and explore
+                            new frontiers in digital art and design.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Section -->
+            <div class="cta-section">
+                <h2>Let's <span class="gradient-text">Create Together</span> 🚀</h2>
+                <p>Have a project in mind? I'd love to bring your vision to life with stunning visuals.</p>
+                <a href="contact.html" class="btn btn-primary">
+                    ✦ Get in Touch →
+                </a>
+            </div>
+        </main>
+
+        <footer>
+            <p>Made with <span class="heart">❤</span> by Apoorva Gupta © 2024</p>
+        </footer>
+    </div>
+
+    <script src="assets/js/background.js"></script>
+    <script>
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.info-card, .about-text-section, .profile-card').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'all 0.6s cubic-bezier(0.4, 0, 0.2, 1)';
+            observer.observe(el);
+        });
+
+        // Trigger initial animations
+        setTimeout(() => {
+            document.querySelectorAll('.profile-card, .about-text-section').forEach(el => {
+                el.style.opacity = '1';
+                el.style.transform = 'translateY(0)';
+            });
+        }, 200);
+    </script>
+</body>
+
+</html>

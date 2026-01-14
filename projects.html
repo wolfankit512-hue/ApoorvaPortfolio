@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work - Apoorva Gupta | Visual Designer Portfolio</title>
+    <meta name="description"
+        content="Explore the stunning visual design portfolio of Apoorva Gupta - featuring work in Photoshop, CorelDraw, After Effects, and Premiere Pro.">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/showcase.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Quicksand:wght@500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Scroll Progress -->
+    <div class="scroll-progress"></div>
+
+    <!-- Animated Background Blobs -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <div class="logo">
+                <div class="logo-icon">A</div>
+                Apoorva
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html" class="active">Work</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Hero Section -->
+            <section class="showcase-hero">
+                <div class="section-subtitle">✨ Portfolio</div>
+                <h1 class="showcase-title">
+                    My <span class="gradient-text">Creative Work</span>
+                </h1>
+                <p class="showcase-subtitle">
+                    A collection of my best visual stories and digital creations — every piece tells a story.
+                </p>
+            </section>
+
+            <!-- Filter Pills -->
+            <div class="filter-pills">
+                <button class="filter-pill active" data-filter="all">
+                    All Works
+                    <span class="filter-count">0</span>
+                </button>
+                <button class="filter-pill" data-filter="photoshop">
+                    Photoshop
+                    <span class="filter-count">0</span>
+                </button>
+                <button class="filter-pill" data-filter="coreldraw">
+                    CorelDraw
+                    <span class="filter-count">0</span>
+                </button>
+                <button class="filter-pill" data-filter="aftereffects">
+                    After Effects
+                    <span class="filter-count">0</span>
+                </button>
+                <button class="filter-pill" data-filter="premierepro">
+                    Premiere Pro
+                    <span class="filter-count">0</span>
+                </button>
+            </div>
+
+            <!-- Section Header -->
+            <div class="section-header">
+                <h2>Selected Works</h2>
+                <span class="count" id="project-count"></span>
+            </div>
+
+            <!-- Bento Grid -->
+            <div id="bento-grid" class="bento-grid">
+                <!-- Cards loaded dynamically by JS -->
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p>Made with <span class="heart">❤</span> by Apoorva Gupta © 2024</p>
+        </footer>
+    </div>
+
+    <!-- Theater Mode Overlay -->
+    <div id="theater-overlay" class="theater-overlay">
+        <button class="theater-close" aria-label="Close"></button>
+
+        <button class="theater-nav theater-prev" aria-label="Previous"></button>
+        <button class="theater-nav theater-next" aria-label="Next"></button>
+
+        <div id="theater-counter" class="theater-counter">1 / 10</div>
+
+        <div class="theater-content">
+            <div id="theater-media-container">
+                <!-- Media loaded dynamically -->
+            </div>
+        </div>
+
+        <div class="theater-info">
+            <h3 id="theater-title">Project Title</h3>
+            <p id="theater-subtitle">Category</p>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/showcase.js"></script>
+    <script>
+        // Update project count
+        document.addEventListener('DOMContentLoaded', () => {
+            const countEl = document.getElementById('project-count');
+            const observer = new MutationObserver(() => {
+                const cards = document.querySelectorAll('.bento-card:not(.hidden)');
+                countEl.textContent = `${cards.length} projects`;
+            });
+            observer.observe(document.getElementById('bento-grid'), { childList: true, subtree: true });
+        });
+    </script>
+</body>
+
+</html>

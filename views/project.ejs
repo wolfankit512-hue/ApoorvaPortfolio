@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= project.title %> - Apoorva Gupta
+    </title>
+    <meta name="description" content="<%= project.description %>">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Three.js CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+
+<body>
+    <div id="canvas-container"></div>
+
+    <div class="container">
+        <header>
+            <div class="logo">Apoorva Gupta</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Work</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="project-detail">
+            <a href="projects.html" class="back-link">← Back to Projects</a>
+
+            <div class="project-header">
+                <h1>
+                    <%= project.title %>
+                </h1>
+                <div class="project-meta">
+                    <span>
+                        <%= project.category %>
+                    </span>
+                    <span>
+                        <%= project.date %>
+                    </span>
+                </div>
+            </div>
+
+            <div class="project-content glass" style="padding: 2rem; border-radius: 16px;">
+                <img src="<%= project.image %>" alt="<%= project.title %>">
+                <p style="font-size: 1.1rem; max-width: 800px; margin: 0 auto;">
+                    <%= project.description %>
+                </p>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; <%= new Date().getFullYear() %> Apoorva Gupta. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="assets/js/background.js"></script>
+</body>
+
+</html>
