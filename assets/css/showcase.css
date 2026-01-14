@@ -668,10 +668,205 @@
 }
 
 /* ===========================================
-   RESPONSIVE
+   RESPONSIVE - ALL DEVICE SIZES
    =========================================== */
 
+/* Large Desktop (1400px+) */
+@media (min-width: 1400px) {
+    .bento-grid {
+        max-width: 1600px;
+        gap: 1.5rem;
+    }
+
+    .bento-card.size-hero {
+        min-height: 550px;
+    }
+
+    .showcase-title {
+        font-size: 8rem;
+    }
+}
+
+/* Desktop (1200px - 1400px) */
+@media (max-width: 1400px) {
+    .bento-grid {
+        max-width: 1200px;
+    }
+}
+
+/* Laptop (1024px - 1200px) */
+@media (max-width: 1200px) {
+    .bento-grid {
+        grid-template-columns: repeat(10, 1fr);
+        max-width: 1000px;
+    }
+
+    .bento-card.size-hero {
+        grid-column: span 6;
+    }
+
+    .bento-card.size-large {
+        grid-column: span 5;
+    }
+
+    .bento-card.size-medium {
+        grid-column: span 4;
+    }
+
+    .bento-card.size-small {
+        grid-column: span 3;
+    }
+
+    .bento-card.size-tall {
+        grid-column: span 4;
+    }
+
+    .showcase-title {
+        font-size: 5rem;
+    }
+}
+
+/* Tablet Landscape (768px - 1024px) */
+@media (max-width: 1024px) {
+    .showcase-hero {
+        min-height: 40vh;
+        padding: 1.5rem;
+    }
+
+    .showcase-title {
+        font-size: 4rem;
+    }
+
+    .showcase-subtitle {
+        font-size: 1rem;
+    }
+
+    .filter-pills {
+        gap: 0.4rem;
+        padding: 1rem;
+    }
+
+    .filter-pill {
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+    }
+
+    .section-header {
+        padding: 0 1.5rem 1rem;
+    }
+
+    .horizontal-card {
+        flex: 0 0 300px;
+        height: 380px;
+    }
+}
+
+/* Tablet Portrait (600px - 768px) */
 @media (max-width: 768px) {
+    .showcase-hero {
+        min-height: 35vh;
+        padding: 1rem;
+    }
+
+    .showcase-title {
+        font-size: 3rem;
+    }
+
+    .showcase-subtitle {
+        font-size: 0.9rem;
+        max-width: 90%;
+    }
+
+    .filter-pills {
+        gap: 0.35rem;
+        padding: 0.75rem;
+    }
+
+    .filter-pill {
+        padding: 0.45rem 0.85rem;
+        font-size: 0.75rem;
+    }
+
+    .filter-count {
+        font-size: 0.65rem;
+        padding: 0.08rem 0.3rem;
+    }
+
+    .bento-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem;
+        padding: 0 1rem 2rem;
+    }
+
+    .bento-card.size-hero,
+    .bento-card.size-large {
+        grid-column: span 2;
+        min-height: 280px;
+        grid-row: span 1;
+    }
+
+    .bento-card.size-medium,
+    .bento-card.size-small,
+    .bento-card.size-tall {
+        grid-column: span 1;
+        min-height: 220px;
+        grid-row: span 1;
+    }
+
+    .bento-badge {
+        padding: 0.3rem 0.6rem;
+        font-size: 0.6rem;
+        top: 0.75rem;
+        left: 0.75rem;
+    }
+
+    .badge-dot {
+        width: 6px;
+        height: 6px;
+    }
+
+    .bento-overlay {
+        padding: 1.25rem;
+    }
+
+    .bento-overlay h3 {
+        font-size: 1.1rem;
+    }
+
+    .bento-overlay p {
+        font-size: 0.8rem;
+    }
+
+    .bento-play {
+        width: 50px;
+        height: 50px;
+    }
+
+    .bento-play::after {
+        border-left-width: 16px;
+        border-top-width: 10px;
+        border-bottom-width: 10px;
+    }
+
+    .section-header {
+        padding: 0 1rem 0.75rem;
+    }
+
+    .section-header h2 {
+        font-size: 0.9rem;
+    }
+
+    .horizontal-card {
+        flex: 0 0 260px;
+        height: 340px;
+    }
+
+    .horizontal-scroll {
+        padding: 0.5rem 1rem 1.5rem;
+        gap: 1rem;
+    }
+
+    /* Theater Mode Mobile */
     .theater-nav {
         width: 44px;
         height: 44px;
@@ -692,13 +887,209 @@
         height: 42px;
     }
 
-    .showcase-hero {
-        min-height: 35vh;
+    .theater-info {
+        padding: 1.5rem;
+    }
+
+    .theater-info h3 {
+        font-size: 1.3rem;
+    }
+
+    .theater-info p {
+        font-size: 0.85rem;
+    }
+
+    .theater-content {
+        max-width: 95vw;
+    }
+}
+
+/* Mobile Large (480px - 600px) */
+@media (max-width: 600px) {
+    .showcase-title {
+        font-size: 2.5rem;
+    }
+
+    .showcase-subtitle {
+        font-size: 0.85rem;
+    }
+
+    .filter-pills {
+        padding: 0.5rem;
+        gap: 0.3rem;
+    }
+
+    .filter-pill {
+        padding: 0.4rem 0.7rem;
+        font-size: 0.7rem;
+    }
+
+    .bento-card.size-hero,
+    .bento-card.size-large,
+    .bento-card.size-medium,
+    .bento-card.size-small,
+    .bento-card.size-tall {
+        grid-column: span 2;
+        min-height: 260px;
     }
 
     .horizontal-card {
-        flex: 0 0 280px;
-        height: 360px;
+        flex: 0 0 240px;
+        height: 320px;
+    }
+}
+
+/* Mobile Small (320px - 480px) */
+@media (max-width: 480px) {
+    .showcase-hero {
+        min-height: 30vh;
+        padding: 0.75rem;
+    }
+
+    .showcase-title {
+        font-size: 2rem;
+    }
+
+    .showcase-subtitle {
+        font-size: 0.8rem;
+    }
+
+    .filter-pills {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .filter-pill {
+        padding: 0.35rem 0.6rem;
+        font-size: 0.65rem;
+    }
+
+    .bento-grid {
+        grid-template-columns: 1fr;
+        gap: 0.6rem;
+        padding: 0 0.75rem 1.5rem;
+    }
+
+    .bento-card.size-hero,
+    .bento-card.size-large,
+    .bento-card.size-medium,
+    .bento-card.size-small,
+    .bento-card.size-tall {
+        grid-column: span 1;
+        min-height: 240px;
+    }
+
+    .bento-badge {
+        padding: 0.25rem 0.5rem;
+        font-size: 0.55rem;
+        top: 0.5rem;
+        left: 0.5rem;
+    }
+
+    .bento-overlay {
+        padding: 1rem;
+        opacity: 1;
+        background: linear-gradient(to top,
+                rgba(0, 0, 0, 0.75) 0%,
+                rgba(0, 0, 0, 0.2) 50%,
+                transparent 100%);
+    }
+
+    .bento-overlay h3 {
+        font-size: 1rem;
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    .bento-overlay p {
+        font-size: 0.75rem;
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    /* Theater Mode small mobile */
+    .theater-nav {
+        width: 38px;
+        height: 38px;
+    }
+
+    .theater-prev {
+        left: 8px;
+    }
+
+    .theater-next {
+        right: 8px;
+    }
+
+    .theater-close {
+        top: 12px;
+        right: 12px;
+        width: 36px;
+        height: 36px;
+    }
+
+    .theater-info {
+        padding: 1rem;
+    }
+
+    .theater-info h3 {
+        font-size: 1.1rem;
+    }
+
+    .theater-counter {
+        font-size: 0.75rem;
+    }
+
+    .section-header {
+        padding: 0 0.75rem 0.5rem;
+    }
+
+    .section-header h2 {
+        font-size: 0.8rem;
+        letter-spacing: 0.05em;
+    }
+
+    .horizontal-card {
+        flex: 0 0 220px;
+        height: 280px;
+    }
+
+    .horizontal-scroll {
+        padding: 0.5rem 0.75rem 1rem;
+        gap: 0.75rem;
+    }
+}
+
+/* Touch Device Optimizations */
+@media (hover: none) and (pointer: coarse) {
+    .bento-overlay {
+        opacity: 1;
+        background: linear-gradient(to top,
+                rgba(0, 0, 0, 0.7) 0%,
+                rgba(0, 0, 0, 0.2) 45%,
+                transparent 75%);
+    }
+
+    .bento-overlay h3,
+    .bento-overlay p {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    .bento-card:hover {
+        transform: none;
+    }
+
+    .bento-card:active {
+        transform: scale(0.98);
+    }
+
+    .filter-pill:hover {
+        transform: none;
+    }
+
+    .filter-pill:active {
+        transform: scale(0.95);
     }
 }
 
