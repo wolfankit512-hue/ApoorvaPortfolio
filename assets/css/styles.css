@@ -1110,44 +1110,60 @@ footer .heart {
   }
 
   nav {
-    position: fixed;
-    top: 0;
-    left: 0;
+    position: absolute;
+    top: calc(100% + 10px);
     right: 0;
-    bottom: 0;
-    background: rgba(255, 255, 255, 0.98);
-    backdrop-filter: blur(50px);
-    -webkit-backdrop-filter: blur(50px);
+    left: auto;
+    bottom: auto;
+    width: 200px;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
     opacity: 0;
     visibility: hidden;
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     z-index: 999;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+    transform: scale(0.9) translateY(-10px);
+    transform-origin: top right;
+    padding: 0.5rem;
   }
 
   nav.active {
     opacity: 1;
     visibility: visible;
+    transform: scale(1) translateY(0);
   }
 
   nav ul {
     flex-direction: column;
-    align-items: center;
-    gap: 1rem;
+    align-items: stretch;
+    width: 100%;
+    gap: 0.25rem;
   }
 
   nav a {
-    font-size: 1.5rem;
-    padding: 1rem 2rem;
-    font-weight: 700;
+    font-size: 1rem;
+    padding: 0.75rem 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    text-align: center;
+    width: 100%;
+    display: block;
   }
 
   nav a:hover,
   nav a.active {
-    background: rgba(255, 107, 107, 0.15);
-    transform: scale(1.05);
+    background: rgba(var(--primary-rgb), 0.1);
+    /* fallback opacity */
+    background: linear-gradient(90deg, #fff0f0, #fff);
+    color: var(--primary);
+    transform: none;
   }
 
   .hero h1 {

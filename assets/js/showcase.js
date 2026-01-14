@@ -88,7 +88,7 @@ class ShowcaseGallery {
                 <div class="bento-media">
                     ${isVideo ?
                 `<video src="${project.filename}" muted loop playsinline></video>` :
-                `<img src="${project.thumbnail}" alt="${project.title}" loading="lazy">`
+                `<img src="${project.thumbnail}" alt="${project.title}" loading="lazy" decoding="async">`
             }
                 </div>
                 ${isVideo ? '<div class="bento-play"></div>' : ''}
@@ -147,23 +147,25 @@ class ShowcaseGallery {
     }
 
     setup3DTilt() {
-        // 3D tilt effect on hover
-        document.addEventListener('mousemove', (e) => {
-            const cards = document.querySelectorAll('.bento-card:hover .bento-inner');
-            cards.forEach(inner => {
-                const card = inner.parentElement;
-                const rect = card.getBoundingClientRect();
-                const x = e.clientX - rect.left;
-                const y = e.clientY - rect.top;
-                const centerX = rect.width / 2;
-                const centerY = rect.height / 2;
+        // 3D tilt effect on hover (Desktop only)
+        if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+            document.addEventListener('mousemove', (e) => {
+                const cards = document.querySelectorAll('.bento-card:hover .bento-inner');
+                cards.forEach(inner => {
+                    const card = inner.parentElement;
+                    const rect = card.getBoundingClientRect();
+                    const x = e.clientX - rect.left;
+                    const y = e.clientY - rect.top;
+                    const centerX = rect.width / 2;
+                    const centerY = rect.height / 2;
 
-                const rotateX = (y - centerY) / 25;
-                const rotateY = (centerX - x) / 25;
+                    const rotateX = (y - centerY) / 25;
+                    const rotateY = (centerX - x) / 25;
 
-                inner.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+                    inner.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+                });
             });
-        });
+        }
 
         // Reset on mouse leave
         document.addEventListener('mouseover', (e) => {
