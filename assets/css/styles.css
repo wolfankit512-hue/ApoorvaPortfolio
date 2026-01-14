@@ -230,8 +230,10 @@ a {
 header {
   position: fixed;
   top: 16px;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  /* transform: translateX(-50%); REMOVED to fix fixed-position children context */
   width: calc(100% - 32px);
   max-width: 1000px;
   padding: 1rem 2rem;
@@ -239,13 +241,22 @@ header {
   justify-content: space-between;
   align-items: center;
   z-index: 1000;
-  background: var(--glass-bg);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  /* background & backdrop-filter moved to ::before to fix containment context */
   border: 1px solid rgba(255, 255, 255, 0.8);
   border-radius: 99px;
   box-shadow: var(--shadow-md);
   transition: all 0.3s ease;
+}
+
+header::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: inherit;
+  z-index: -1;
 }
 
 header:hover {
@@ -1104,9 +1115,9 @@ footer .heart {
     left: 0;
     right: 0;
     bottom: 0;
-    background: var(--glass-bg);
-    backdrop-filter: blur(30px);
-    -webkit-backdrop-filter: blur(30px);
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
     display: flex;
     align-items: center;
     justify-content: center;
