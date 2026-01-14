@@ -4,8 +4,10 @@
   "description": "Portfolio website for Visual Designer Apoorva Gupta",
   "main": "build.js",
   "scripts": {
-    "build": "node build.js",
-    "dev": "node build.js && serve ."
+    "update-projects": "node generate-projects.js",
+    "build": "node generate-projects.js",
+    "start": "node generate-projects.js && npx serve . -p 3000",
+    "dev": "npx serve . -p 3000"
   },
   "keywords": [
     "portfolio",

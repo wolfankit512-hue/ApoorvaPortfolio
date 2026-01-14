@@ -1,365 +1,475 @@
 [
   {
-    "id": 1,
-    "title": "Latest Project Project 2",
-    "category": "mixed",
-    "thumbnail": "assets/img/latest/pexels-maxfrancis-2246476.jpg",
-    "filename": "assets/img/latest/pexels-maxfrancis-2246476.jpg",
+    "title": "Baby Hipoo",
+    "category": "photoshop",
+    "thumbnail": "assets/img/latest/baby hipoo.jpg",
+    "filename": "assets/img/latest/baby hipoo.jpg",
     "isSelected": true,
     "software": [
-      "Latest Project"
-    ]
+      "Photoshop"
+    ],
+    "id": 1
   },
   {
-    "id": 2,
-    "title": "Latest Project Project 3",
-    "category": "mixed",
-    "thumbnail": "assets/img/latest/pexels-steve-1266808.jpg",
-    "filename": "assets/img/latest/pexels-steve-1266808.jpg",
+    "title": "Movie1d",
+    "category": "photoshop",
+    "thumbnail": "assets/img/latest/movie1d-Recovered.jpg",
+    "filename": "assets/img/latest/movie1d-Recovered.jpg",
     "isSelected": true,
     "software": [
-      "Latest Project"
-    ]
+      "Photoshop"
+    ],
+    "id": 2
   },
   {
-    "id": 3,
-    "title": "Photoshop Project 4",
+    "title": "Box Effect Psd",
     "category": "photoshop",
-    "thumbnail": "assets/img/photoshop/pexels-aakash-gupta-1333226-2567011.jpg",
-    "filename": "assets/img/photoshop/pexels-aakash-gupta-1333226-2567011.jpg",
+    "thumbnail": "assets/img/photoshop/Box effect psd.jpg",
+    "filename": "assets/img/photoshop/Box effect psd.jpg",
     "isSelected": false,
     "software": [
       "Photoshop"
-    ]
+    ],
+    "id": 3
   },
   {
-    "id": 4,
-    "title": "Photoshop Project 5",
+    "title": "Display Stand Mockup 1 Fg",
     "category": "photoshop",
-    "thumbnail": "assets/img/photoshop/pexels-fotios-photos-1266302.jpg",
-    "filename": "assets/img/photoshop/pexels-fotios-photos-1266302.jpg",
+    "thumbnail": "assets/img/photoshop/Display_Stand_Mockup_1 fg.jpg",
+    "filename": "assets/img/photoshop/Display_Stand_Mockup_1 fg.jpg",
     "isSelected": false,
     "software": [
       "Photoshop"
-    ]
+    ],
+    "id": 4
   },
   {
-    "id": 5,
-    "title": "Photoshop Project 6",
+    "title": "JAZZ POSTER",
     "category": "photoshop",
-    "thumbnail": "assets/img/photoshop/pexels-icon0-1214259.jpg",
-    "filename": "assets/img/photoshop/pexels-icon0-1214259.jpg",
+    "thumbnail": "assets/img/photoshop/JAZZ POSTER.jpg",
+    "filename": "assets/img/photoshop/JAZZ POSTER.jpg",
     "isSelected": false,
     "software": [
       "Photoshop"
-    ]
+    ],
+    "id": 5
   },
   {
-    "id": 6,
-    "title": "Photoshop Project 7",
+    "title": "Manupulation Of Bear Drink",
     "category": "photoshop",
-    "thumbnail": "assets/img/photoshop/pexels-iriser-1122639.jpg",
-    "filename": "assets/img/photoshop/pexels-iriser-1122639.jpg",
+    "thumbnail": "assets/img/photoshop/manupulation of bear drink.jpg",
+    "filename": "assets/img/photoshop/manupulation of bear drink.jpg",
     "isSelected": false,
     "software": [
       "Photoshop"
-    ]
+    ],
+    "id": 6
   },
   {
-    "id": 7,
-    "title": "Photoshop Project 8",
+    "title": "Manupulation1",
     "category": "photoshop",
-    "thumbnail": "assets/img/photoshop/pexels-maxfrancis-2246476.jpg",
-    "filename": "assets/img/photoshop/pexels-maxfrancis-2246476.jpg",
+    "thumbnail": "assets/img/photoshop/manupulation1.jpg",
+    "filename": "assets/img/photoshop/manupulation1.jpg",
     "isSelected": false,
     "software": [
       "Photoshop"
-    ]
+    ],
+    "id": 7
   },
   {
-    "id": 8,
-    "title": "Photoshop Project 9",
+    "title": "Mockup 1 For Movie Poster",
     "category": "photoshop",
-    "thumbnail": "assets/img/photoshop/pexels-pixabay-65894.jpg",
-    "filename": "assets/img/photoshop/pexels-pixabay-65894.jpg",
+    "thumbnail": "assets/img/photoshop/mockup 1 for movie poster.jpg",
+    "filename": "assets/img/photoshop/mockup 1 for movie poster.jpg",
     "isSelected": false,
     "software": [
       "Photoshop"
-    ]
+    ],
+    "id": 8
   },
   {
-    "id": 9,
-    "title": "Photoshop Project 10",
+    "title": "Movie Poster Mockup 2",
     "category": "photoshop",
-    "thumbnail": "assets/img/photoshop/pexels-siri-202700-698921.jpg",
-    "filename": "assets/img/photoshop/pexels-siri-202700-698921.jpg",
+    "thumbnail": "assets/img/photoshop/movie poster mockup 2.jpg",
+    "filename": "assets/img/photoshop/movie poster mockup 2.jpg",
     "isSelected": false,
     "software": [
       "Photoshop"
-    ]
+    ],
+    "id": 9
   },
   {
-    "id": 10,
-    "title": "Photoshop Project 11",
+    "title": "Orange Juice",
     "category": "photoshop",
-    "thumbnail": "assets/img/photoshop/pexels-tgh2018-1269674.jpg",
-    "filename": "assets/img/photoshop/pexels-tgh2018-1269674.jpg",
+    "thumbnail": "assets/img/photoshop/orange juice.jpg",
+    "filename": "assets/img/photoshop/orange juice.jpg",
     "isSelected": false,
     "software": [
       "Photoshop"
-    ]
+    ],
+    "id": 10
   },
   {
-    "id": 11,
-    "title": "Photoshop Project 12",
+    "title": "Orange Juie 2",
     "category": "photoshop",
-    "thumbnail": "assets/img/photoshop/project1.png",
-    "filename": "assets/img/photoshop/project1.png",
+    "thumbnail": "assets/img/photoshop/orange juie 2.jpg",
+    "filename": "assets/img/photoshop/orange juie 2.jpg",
     "isSelected": false,
     "software": [
       "Photoshop"
-    ]
+    ],
+    "id": 11
   },
   {
-    "id": 12,
-    "title": "Photoshop Project 13",
+    "title": "Photoshop Splash Effect",
     "category": "photoshop",
-    "thumbnail": "assets/img/photoshop/project1_thumb.webp",
-    "filename": "assets/img/photoshop/project1_thumb.webp",
+    "thumbnail": "assets/img/photoshop/photoshop splash effect.jpg",
+    "filename": "assets/img/photoshop/photoshop splash effect.jpg",
     "isSelected": false,
     "software": [
       "Photoshop"
-    ]
+    ],
+    "id": 12
   },
   {
-    "id": 13,
-    "title": "CorelDraw Project 14",
+    "title": "Thumbnail 2",
+    "category": "photoshop",
+    "thumbnail": "assets/img/photoshop/thumbnail 2.jpg",
+    "filename": "assets/img/photoshop/thumbnail 2.jpg",
+    "isSelected": false,
+    "software": [
+      "Photoshop"
+    ],
+    "id": 13
+  },
+  {
+    "title": "Thumbnail DONE",
+    "category": "photoshop",
+    "thumbnail": "assets/img/photoshop/thumbnail DONE.jpg",
+    "filename": "assets/img/photoshop/thumbnail DONE.jpg",
+    "isSelected": false,
+    "software": [
+      "Photoshop"
+    ],
+    "id": 14
+  },
+  {
+    "title": "WEB",
+    "category": "photoshop",
+    "thumbnail": "assets/img/photoshop/WEB-Recovered.jpg",
+    "filename": "assets/img/photoshop/WEB-Recovered.jpg",
+    "isSelected": false,
+    "software": [
+      "Photoshop"
+    ],
+    "id": 15
+  },
+  {
+    "title": "Yt Banner 1 Done",
+    "category": "photoshop",
+    "thumbnail": "assets/img/photoshop/yt banner 1 done.jpg",
+    "filename": "assets/img/photoshop/yt banner 1 done.jpg",
+    "isSelected": false,
+    "software": [
+      "Photoshop"
+    ],
+    "id": 16
+  },
+  {
+    "title": "Pexels Aakash Gupta 1333226",
+    "category": "coreldraw",
+    "thumbnail": "assets/img/coreldraw/pexels-aakash-gupta-1333226-2567011.jpg",
+    "filename": "assets/img/coreldraw/pexels-aakash-gupta-1333226-2567011.jpg",
+    "isSelected": false,
+    "software": [
+      "CorelDraw"
+    ],
+    "id": 17
+  },
+  {
+    "title": "Pexels Eberhardgross",
     "category": "coreldraw",
     "thumbnail": "assets/img/coreldraw/pexels-eberhardgross-443446.jpg",
     "filename": "assets/img/coreldraw/pexels-eberhardgross-443446.jpg",
     "isSelected": false,
     "software": [
       "CorelDraw"
-    ]
+    ],
+    "id": 18
   },
   {
-    "id": 14,
-    "title": "CorelDraw Project 15",
+    "title": "Pexels Fotios Photos",
+    "category": "coreldraw",
+    "thumbnail": "assets/img/coreldraw/pexels-fotios-photos-1266302.jpg",
+    "filename": "assets/img/coreldraw/pexels-fotios-photos-1266302.jpg",
+    "isSelected": false,
+    "software": [
+      "CorelDraw"
+    ],
+    "id": 19
+  },
+  {
+    "title": "Pexels Icon0",
+    "category": "coreldraw",
+    "thumbnail": "assets/img/coreldraw/pexels-icon0-1214259.jpg",
+    "filename": "assets/img/coreldraw/pexels-icon0-1214259.jpg",
+    "isSelected": false,
+    "software": [
+      "CorelDraw"
+    ],
+    "id": 20
+  },
+  {
+    "title": "Pexels Iriser",
+    "category": "coreldraw",
+    "thumbnail": "assets/img/coreldraw/pexels-iriser-1122639.jpg",
+    "filename": "assets/img/coreldraw/pexels-iriser-1122639.jpg",
+    "isSelected": false,
+    "software": [
+      "CorelDraw"
+    ],
+    "id": 21
+  },
+  {
+    "title": "Pexels Katieburandt",
     "category": "coreldraw",
     "thumbnail": "assets/img/coreldraw/pexels-katieburandt-1212693.jpg",
     "filename": "assets/img/coreldraw/pexels-katieburandt-1212693.jpg",
     "isSelected": false,
     "software": [
       "CorelDraw"
-    ]
+    ],
+    "id": 22
   },
   {
-    "id": 15,
-    "title": "CorelDraw Project 16",
+    "title": "Pexels Maxandrey",
     "category": "coreldraw",
     "thumbnail": "assets/img/coreldraw/pexels-maxandrey-1366630.jpg",
     "filename": "assets/img/coreldraw/pexels-maxandrey-1366630.jpg",
     "isSelected": false,
     "software": [
       "CorelDraw"
-    ]
+    ],
+    "id": 23
   },
   {
-    "id": 16,
-    "title": "CorelDraw Project 17",
+    "title": "Pexels Maxfrancis",
+    "category": "coreldraw",
+    "thumbnail": "assets/img/coreldraw/pexels-maxfrancis-2246476.jpg",
+    "filename": "assets/img/coreldraw/pexels-maxfrancis-2246476.jpg",
+    "isSelected": false,
+    "software": [
+      "CorelDraw"
+    ],
+    "id": 24
+  },
+  {
+    "title": "Pexels Pixabay",
     "category": "coreldraw",
     "thumbnail": "assets/img/coreldraw/pexels-pixabay-60597.jpg",
     "filename": "assets/img/coreldraw/pexels-pixabay-60597.jpg",
     "isSelected": false,
     "software": [
       "CorelDraw"
-    ]
+    ],
+    "id": 25
   },
   {
-    "id": 17,
-    "title": "CorelDraw Project 18",
+    "title": "Pexels Pixabay",
     "category": "coreldraw",
-    "thumbnail": "assets/img/coreldraw/pexels-steve-1266808.jpg",
-    "filename": "assets/img/coreldraw/pexels-steve-1266808.jpg",
+    "thumbnail": "assets/img/coreldraw/pexels-pixabay-65894.jpg",
+    "filename": "assets/img/coreldraw/pexels-pixabay-65894.jpg",
     "isSelected": false,
     "software": [
       "CorelDraw"
-    ]
+    ],
+    "id": 26
   },
   {
-    "id": 18,
-    "title": "After Effects Project 19",
+    "title": "Pexels Dianne 60973",
     "category": "aftereffects",
     "thumbnail": "assets/img/aftereffects/pexels-dianne-60973-226424.jpg",
     "filename": "assets/img/aftereffects/pexels-dianne-60973-226424.jpg",
     "isSelected": false,
     "software": [
       "After Effects"
-    ]
+    ],
+    "id": 27
   },
   {
-    "id": 19,
-    "title": "After Effects Project 20",
+    "title": "Pexels Eberhardgross",
     "category": "aftereffects",
     "thumbnail": "assets/img/aftereffects/pexels-eberhardgross-1366919.jpg",
     "filename": "assets/img/aftereffects/pexels-eberhardgross-1366919.jpg",
     "isSelected": false,
     "software": [
       "After Effects"
-    ]
+    ],
+    "id": 28
   },
   {
-    "id": 20,
-    "title": "After Effects Project 21",
+    "title": "Pexels Eberhardgross",
     "category": "aftereffects",
     "thumbnail": "assets/img/aftereffects/pexels-eberhardgross-456710.jpg",
     "filename": "assets/img/aftereffects/pexels-eberhardgross-456710.jpg",
     "isSelected": false,
     "software": [
       "After Effects"
-    ]
+    ],
+    "id": 29
   },
   {
-    "id": 21,
-    "title": "After Effects Project 22",
+    "title": "Pexels Pixabay",
     "category": "aftereffects",
     "thumbnail": "assets/img/aftereffects/pexels-pixabay-33045.jpg",
     "filename": "assets/img/aftereffects/pexels-pixabay-33045.jpg",
     "isSelected": false,
     "software": [
       "After Effects"
-    ]
+    ],
+    "id": 30
   },
   {
-    "id": 22,
-    "title": "After Effects Project 23",
+    "title": "Pexels Pixabay",
     "category": "aftereffects",
     "thumbnail": "assets/img/aftereffects/pexels-pixabay-33101.jpg",
     "filename": "assets/img/aftereffects/pexels-pixabay-33101.jpg",
     "isSelected": false,
     "software": [
       "After Effects"
-    ]
+    ],
+    "id": 31
   },
   {
-    "id": 23,
-    "title": "After Effects Project 24",
+    "title": "Pexels Pixabay",
     "category": "aftereffects",
     "thumbnail": "assets/img/aftereffects/pexels-pixabay-45853.jpg",
     "filename": "assets/img/aftereffects/pexels-pixabay-45853.jpg",
     "isSelected": false,
     "software": [
       "After Effects"
-    ]
+    ],
+    "id": 32
   },
   {
-    "id": 24,
-    "title": "After Effects Project 25",
+    "title": "Pexels Pixabay",
     "category": "aftereffects",
     "thumbnail": "assets/img/aftereffects/pexels-pixabay-47334.jpg",
     "filename": "assets/img/aftereffects/pexels-pixabay-47334.jpg",
     "isSelected": false,
     "software": [
       "After Effects"
-    ]
+    ],
+    "id": 33
   },
   {
-    "id": 25,
-    "title": "After Effects Project 26",
+    "title": "Pexels Siri 202700",
+    "category": "aftereffects",
+    "thumbnail": "assets/img/aftereffects/pexels-siri-202700-698921.jpg",
+    "filename": "assets/img/aftereffects/pexels-siri-202700-698921.jpg",
+    "isSelected": false,
+    "software": [
+      "After Effects"
+    ],
+    "id": 34
+  },
+  {
+    "title": "Pexels Souvenirpixels",
     "category": "aftereffects",
     "thumbnail": "assets/img/aftereffects/pexels-souvenirpixels-417074.jpg",
     "filename": "assets/img/aftereffects/pexels-souvenirpixels-417074.jpg",
     "isSelected": false,
     "software": [
       "After Effects"
-    ]
+    ],
+    "id": 35
   },
   {
-    "id": 26,
-    "title": "Premiere Pro Project 27",
+    "title": "Pexels Steve",
+    "category": "aftereffects",
+    "thumbnail": "assets/img/aftereffects/pexels-steve-1266808.jpg",
+    "filename": "assets/img/aftereffects/pexels-steve-1266808.jpg",
+    "isSelected": false,
+    "software": [
+      "After Effects"
+    ],
+    "id": 36
+  },
+  {
+    "title": "Pexels Asadphoto",
     "category": "premierepro",
     "thumbnail": "assets/img/premierpro/pexels-asadphoto-1024967.jpg",
     "filename": "assets/img/premierpro/pexels-asadphoto-1024967.jpg",
     "isSelected": false,
     "software": [
       "Premiere Pro"
-    ]
+    ],
+    "id": 37
   },
   {
-    "id": 27,
-    "title": "Premiere Pro Project 28",
+    "title": "Pexels Mccutcheon",
     "category": "premierepro",
     "thumbnail": "assets/img/premierpro/pexels-mccutcheon-1191710.jpg",
     "filename": "assets/img/premierpro/pexels-mccutcheon-1191710.jpg",
     "isSelected": false,
     "software": [
       "Premiere Pro"
-    ]
+    ],
+    "id": 38
   },
   {
-    "id": 28,
-    "title": "Premiere Pro Project 29",
+    "title": "Pexels Pixabay",
     "category": "premierepro",
     "thumbnail": "assets/img/premierpro/pexels-pixabay-33109.jpg",
     "filename": "assets/img/premierpro/pexels-pixabay-33109.jpg",
     "isSelected": false,
     "software": [
       "Premiere Pro"
-    ]
+    ],
+    "id": 39
   },
   {
-    "id": 29,
-    "title": "Premiere Pro Project 30",
+    "title": "Pexels Pixabay",
     "category": "premierepro",
     "thumbnail": "assets/img/premierpro/pexels-pixabay-36762.jpg",
     "filename": "assets/img/premierpro/pexels-pixabay-36762.jpg",
     "isSelected": false,
     "software": [
       "Premiere Pro"
-    ]
+    ],
+    "id": 40
   },
   {
-    "id": 30,
-    "title": "Premiere Pro Project 31",
+    "title": "Pexels Souvenirpixels",
     "category": "premierepro",
     "thumbnail": "assets/img/premierpro/pexels-souvenirpixels-1519088.jpg",
     "filename": "assets/img/premierpro/pexels-souvenirpixels-1519088.jpg",
     "isSelected": false,
     "software": [
       "Premiere Pro"
-    ]
+    ],
+    "id": 41
   },
   {
-    "id": 31,
-    "title": "Premiere Pro Project 32",
+    "title": "Pexels Steve 1266808 (1)",
     "category": "premierepro",
     "thumbnail": "assets/img/premierpro/pexels-steve-1266808 (1).jpg",
     "filename": "assets/img/premierpro/pexels-steve-1266808 (1).jpg",
     "isSelected": false,
     "software": [
       "Premiere Pro"
-    ]
+    ],
+    "id": 42
   },
   {
-    "id": 32,
-    "title": "Premiere Pro Project 33",
+    "title": "Pexels Tgh2018",
     "category": "premierepro",
-    "thumbnail": "assets/img/premierpro/project2.png",
-    "filename": "assets/img/premierpro/project2.png",
+    "thumbnail": "assets/img/premierpro/pexels-tgh2018-1269674.jpg",
+    "filename": "assets/img/premierpro/pexels-tgh2018-1269674.jpg",
     "isSelected": false,
     "software": [
       "Premiere Pro"
-    ]
-  },
-  {
-    "id": 33,
-    "title": "Premiere Pro Project 34",
-    "category": "premierepro",
-    "thumbnail": "assets/img/premierpro/project2_thumb.webp",
-    "filename": "assets/img/premierpro/project2_thumb.webp",
-    "isSelected": false,
-    "software": [
-      "Premiere Pro"
-    ]
+    ],
+    "id": 43
   }
 ]
