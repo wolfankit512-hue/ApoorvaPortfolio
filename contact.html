@@ -67,6 +67,14 @@
             -webkit-text-fill-color: transparent;
             margin-bottom: 2rem;
             transition: all 0.3s ease;
+            word-break: break-all;
+            /* Prevent overflow on small screens */
+        }
+
+        @media (max-width: 480px) {
+            .email-link {
+                font-size: 1.1rem;
+            }
         }
 
         .email-link:hover {
